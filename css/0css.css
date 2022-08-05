@@ -215,7 +215,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     order: 1;
 
 }
-.name{
+.name1{
     display: flex;
     font-size: 40px;
     color: rgb(90, 91, 93);
@@ -294,7 +294,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .inbox_block p{
     display: flex;
     font-size: 18px;
-    color: rgb(90, 91, 93);
+    
 }
 
 .labels {
@@ -365,7 +365,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .labels2{
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(90, 91, 93);
 }
 
@@ -374,14 +374,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid #000;
-    max-height: 100vh;
-    max-width: 100vh;
+    width: 100vh;
+    
+   
 }
 .topright {
+    display: flex;
+    flex-direction: row;
     border: 1px solid #000;
 }
 .search {
+    display: flex;
+    border-radius: 10px;
     border: 1px solid #000;
+    background-color: rgb(240, 242,254);
+    height: 50px;
+    padding: 3px;
+}
+input[type='textarea'] { 
+    font-size: 18px;
+    background-color: rgb(240, 242,254);
 }
 .active {
     border: 1px solid #000;
@@ -413,15 +425,28 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .list {
     border: 1px solid #000;
 }
-.allocated {
-    border: 1px solid #000;
+.list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 .name {
+    display: flex;
+    order: 1;
     border: 1px solid #000;
 }
+
 .mass {
+    display: flex;
+    order: 2;
     border: 1px solid #000;
+    overflow: hidden;
+    text-overflow: clip;
 }
+
 .date {
+    display: flex;
+    order: 3;
     border: 1px solid #000;
 }
