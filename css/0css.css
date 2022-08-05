@@ -54,13 +54,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     font-family: 'Noto Sans';
     font-weight: 300;
-    color: rgb(61, 61, 61);
+    color: rgb(90, 91, 93);
     
     min-height: 100vh;
     max-width: 100vh;
-    
-}
-.wapper div{
     
 }
 
@@ -71,11 +68,64 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border-radius: 50%;
     background-color: rgb(234, 240, 252);
 }
-button:hover{
+.left button:hover{
     background-color: rgb( 209, 229, 254) ;
 }
 .b1{
-   background-image: url(../img/menu.png);
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b2{
+    background-image: url(../img/email.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b3{
+    background-image: url(../img/chat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b4{
+    background-image: url(../img/people.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b5{
+    background-image: url(../img/online-meeting.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b6{
+    background-image: url(../img/figures.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b7{
+    background-image: url(../img/face-detection.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
+}
+.b8{
+    background-image: url(../img/face-id.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px, 25px;
+
 }
 
 .left {
@@ -97,6 +147,8 @@ button:hover{
     padding: 0;
 }
 .menu {
+    display: flex;
+    
     margin-top: 15px;
 }
 .mail {
@@ -142,39 +194,181 @@ button:hover{
 .center {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #000;
-    max-width: max-content;
+    justify-content:flex-start;
+    width: 40vh;
+    margin-right: 2%;
    
 }
 .gmail {
-    border: 1px solid #000;
-    font-size: 40px;
     display: inline-flex;
     flex-direction: row;
     align-items: flex-end ;
     margin-left: 2%;
+    border: none;
 
 }
-.icon {
-    width: 40px;
-    height: 40px;
+
+.ggicon{
     display: flex;
+    box-sizing: 45px 45px;
+    align-content: center;
+    order: 1;
 
 }
 .name{
     display: flex;
+    font-size: 40px;
+    color: rgb(90, 91, 93);
+    background-color: white;
+    order:2;
+    outline: none;
 }
 
+
 .compose {
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
 }
-.inbox {
-    border: 1px solid #000;
+.composebut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 130px;
+    height: 50px;
+    font-size: 18px;
+    color: rgb(90, 91, 93);
+    border-radius: 10px;
+    margin: 20px 0 0 10px;
+    padding: 5px 5px 2px 5px;
+    background-color: white;
+   
+   
 }
+.composebut:hover{
+    background-color: rgb(196, 232, 255);
+    color: #000;
+}
+.pen{
+    display: flex;
+    height: 26px;
+    width: 26px;
+    order: 1;
+    margin-right: 15px;
+}
+.textbutcom{
+    display: flex;
+    order: 2;
+}
+
+.inbox_block {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 18;
+}
+.inbox_block button{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    color: rgb(90, 91, 93);
+
+}
+.inbox_block button:hover{
+    background-color: rgb(212, 228, 254);
+    color: #000;
+}
+.inbox_block img{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.inbox_block p{
+    display: flex;
+    font-size: 18px;
+    color: rgb(90, 91, 93);
+}
+
 .labels {
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 2%;
+    font-size: 18px;
+    background-color: white;
+    justify-content: space-between;
 }
+.labname{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.labname button{
+    display: flex;
+    align-self: flex-end;
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/plus.png);
+    background-size: 20px 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+.labname img{
+    display: flex;
+    height: 20px;
+    width: 20px; 
+    align-self: flex-end ;
+}
+.labname p{
+    display: flex;
+    font-size: 20px;
+    color: rgb(90, 91, 93);
+    align-self: flex-start;
+}
+.labels2{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: rgb(90, 91, 93);
+}
+.labels2 button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(90, 91, 93);
+}
+.labels2 button:hover{
+    background-color: rgb(212, 228, 254);
+    color: #000;
+}
+.labels2 img{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.labels2{
+    display: flex;
+    font-size: 20px;
+    color: rgb(90, 91, 93);
+}
+
 .right {
     display: flex;
     flex-direction: column;
