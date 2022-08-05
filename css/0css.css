@@ -1,0 +1,233 @@
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../../fonts/NotoSans-Light.eot');
+	src: local('☺'), url('../../fonts/NotoSans-Light.woff') format('woff'), url('../fonts/NotoSans-Light.ttf') format('truetype'), url('../fonts/NotoSans-Light.svg') format('svg');
+	font-weight: light;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/NotoSans-Medium.eot');
+	src: local('☺'), url('../fonts/NotoSans-Medium.woff') format('woff'), url('../fonts/NotoSans-Medium.ttf') format('truetype'), url('../fonts/NotoSans-Medium.svg') format('svg');
+	font-weight: medium;
+	font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.wapper {
+    display: flex;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    color: rgb(61, 61, 61);
+    
+    min-height: 100vh;
+    max-width: 100vh;
+    
+}
+.wapper div{
+    
+}
+
+.left button{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(234, 240, 252);
+}
+button:hover{
+    background-color: rgb( 209, 229, 254) ;
+}
+.b1{
+   background-image: url(../img/menu.png);
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: max-content;
+    border-right: 15px solid rgb(234, 240, 252);
+    border-left: 15px solid rgb(234, 240, 252);
+    background-color: rgb(234, 240, 252);
+    
+}
+ 
+.topleft {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+.menu {
+    margin-top: 15px;
+}
+.mail {
+    margin-top: 25px;
+    
+}
+.chat {
+    margin-top: 25px;
+
+}
+.spaces {
+    margin-top: 25px;
+    
+}
+.meet{
+    margin-top: 25px;
+    
+    
+}
+.bottomleft {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+.fig {
+    margin-top: 25px;
+    
+    
+}
+.portret1 {
+    margin-top: 25px;
+    
+    
+}
+.portret2 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    
+    
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    max-width: max-content;
+   
+}
+.gmail {
+    border: 1px solid #000;
+    font-size: 40px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end ;
+    margin-left: 2%;
+
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+
+}
+.name{
+    display: flex;
+}
+
+.compose {
+    border: 1px solid #000;
+}
+.inbox {
+    border: 1px solid #000;
+}
+.labels {
+    border: 1px solid #000;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    max-height: 100vh;
+    max-width: 100vh;
+}
+.topright {
+    border: 1px solid #000;
+}
+.search {
+    border: 1px solid #000;
+}
+.active {
+    border: 1px solid #000;
+}
+.que {
+    border: 1px solid #000;
+}
+.settings {
+    border: 1px solid #000;
+}
+.points {
+    border: 1px solid #000;
+}
+.centerright {
+    border: 1px solid #000;
+}
+.all {
+    border: 1px solid #000;
+}
+.update {
+    border: 1px solid #000;
+}
+.nav {
+    border: 1px solid #000;
+}
+.bottomright {
+    border: 1px solid #000;
+}
+.list {
+    border: 1px solid #000;
+}
+.allocated {
+    border: 1px solid #000;
+}
+.name {
+    border: 1px solid #000;
+}
+.mass {
+    border: 1px solid #000;
+}
+.date {
+    border: 1px solid #000;
+}
