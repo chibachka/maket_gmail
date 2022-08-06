@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: rgb(90, 91, 93);
     
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     
 }
 
@@ -196,7 +196,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: column;
     justify-content:flex-start;
     min-width: 40vh;
+    max-width: 40vh;
     margin-right: 2%;
+    white-space: nowrap;
    
 }
 .gmail {
@@ -310,7 +312,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     background-color: white;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
 }
 .labname button{
     display: flex;
@@ -370,16 +372,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .right {
-    display: flex;
+    display: table;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #000;
-    
+    white-space: nowrap;
+    width: 100%;
+    font-size: 18px;
+    height: 100vh;
    
 }
 .topright {
     display: flex;
     flex-direction: row;
+    width: 100%;
     border: 1px solid #000;
 }
 .search {
@@ -407,6 +412,8 @@ input[type='textarea'] {
     border: 1px solid #000;
 }
 .centerright {
+    display: flex;
+    width: 100%;
     border: 1px solid #000;
 }
 .all {
@@ -419,21 +426,45 @@ input[type='textarea'] {
     border: 1px solid #000;
 }
 .bottomright {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
     border: 1px solid #000;
 }
 .list {
     border: 1px solid #000;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    white-space: nowrap;
+
 }
-.list li{
+.list li {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
     
+}
+.list li:not(:nth-child(-n+4)){
+    background-color: rgb(240, 242,254) ;
+}
+.allocated .name{
+    font-weight: bold;
+    color: #000;
+}
+.allocated .date{
+    font-weight: bold;
+    color: #000;
 }
 .name {
     display: flex;
     order: 1;
     border: 1px solid #000;
+    width: 13%;
+    padding: 5px;
+
 }
 
 .mass {
@@ -441,11 +472,16 @@ input[type='textarea'] {
     order: 2;
     border: 1px solid #000;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis "[...]";
+    white-space: nowrap;
+    width: 82%;
+    padding: 5px;
 }
 
 .date {
     display: flex;
     order: 3;
     border: 1px solid #000;
+    width: 5%;
+    padding: 5px;
 }
