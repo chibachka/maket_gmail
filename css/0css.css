@@ -196,7 +196,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    min-width: 20%;
     max-width: 20%;
     margin-right: 2%;
     white-space: nowrap;
@@ -205,7 +204,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .gmail {
     display: inline-flex;
     flex-direction: row;
-    align-items: flex-end ;
+    justify-content: center;
+    align-items: center ;
     margin-left: 2%;
     border: none;
 
@@ -379,7 +379,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .right {
     display: flex;
     flex-direction: column;
-     
     width: 100%;
     font-size: 18px;
     height: 100%;
@@ -492,41 +491,54 @@ input[type='textarea'] {
     justify-content: space-between;
     width: 100%;
     margin: 5px 0px 5px 5px;
+    
      
 }   
 .zadolbalo{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     width: 7%;
-    justify-content: space-between;
-    padding-left: 2px;
-    padding-right: 2px;
+    
+    margin: 0;
+    padding: 0;
+  
+}
+.pustota{
+    display: flex;
+    order: 1;
+    width: 33.333333%;
+    
 }
 .all {
-     
+   
     display: flex;
     align-self: center;
+    width: 33.333333%;
+    justify-content: center;
     
+    order: 2;
+
 }
 .all button{
     background-color: white;
 }
 
 .update {
-     
     display: flex;
-    align-self: center;
     height: 18px;
-    width: 18px;
-    
+    width: 33.333333%;
+    justify-content: center;
+   
+    order: 3;
 }
 .update button{
     background-color: white;
 }
 
 .update img{
-    height: 18px;
-    width: 18px;
+    height: 19px;
+    width: 19px;
 }
 .uzhas{
     width: 7%;
