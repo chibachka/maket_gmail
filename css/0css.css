@@ -385,6 +385,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     overflow: hidden;
    
 }
+.end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .topright {
     display: flex;
     flex-direction: row;
@@ -398,14 +403,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: row;
     align-items: flex-end;
     margin-right: 5px;
+    width: 7%;
+    justify-content: space-between;
+}
+.topright_end button{
+    background-color: white;
 }
 .search {
     display: flex;
     border-radius: 10px;
     background-color: rgb(240, 242,254);
     height: 50px;
-    padding: 3px;
-    width: 50%;
+    padding: 5px;
+    width: 27%;
     margin: 5px 0 5px 0;
 }
 input[type='textarea'] { 
@@ -415,12 +425,12 @@ input[type='textarea'] {
 .active{
     display: flex;
     align-items: center;
-    justify-items: flex-start;
+    justify-items: flex-end;
 }
 .butact {
     display: flex;
     flex-direction: row;
-    border: 1px solid rgb(240, 242,254);
+    border: 1px solid rgb(90, 91, 93);
     width: max-content;
     height: max-content;
     border-radius: 10px ;
@@ -499,8 +509,7 @@ input[type='textarea'] {
     flex-direction: row;
     justify-content: flex-start;
     width: 7%;
-    
-    margin: 0;
+    margin-left: 2px;
     padding: 0;
   
 }
@@ -516,7 +525,7 @@ input[type='textarea'] {
     align-self: center;
     width: 33.333333%;
     justify-content: center;
-    
+    padding-left: 5px;
     order: 2;
 
 }
@@ -549,9 +558,10 @@ input[type='textarea'] {
     
 }
 .nav {
-     
+    width: 7%;
     display: flex;
     align-self: center;
+    justify-content: center;
    
 }
 .nav button{
@@ -566,6 +576,8 @@ input[type='textarea'] {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    overflow: scroll;
+    padding: 5px;
      
 }
 .list {
@@ -575,16 +587,25 @@ input[type='textarea'] {
     width: 100%;
     flex-direction: column;
     white-space: nowrap;
+    
 
 }
 .list li {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 5px;
     
+    
+}
+.list li:hover{
+    box-shadow: 0px 0px 5px;
 }
 .list li:not(:nth-child(-n+4)){
     background-color: rgb(240, 242,254) ;
+}
+.backli{
+    background-color: rgb(240, 242,254);
 }
 .allocated .name{
     
