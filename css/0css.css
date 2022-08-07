@@ -197,7 +197,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: column;
     justify-content:flex-start;
     max-width: 20%;
-    margin-right: 2%;
+    margin-right: 1%;
     white-space: nowrap;
    
 }
@@ -247,6 +247,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 5px 5px 2px 5px;
     background-color: white;
     align-items: center;
+    border: 1px solid rgb(212, 228, 254);
    
    
    
@@ -285,6 +286,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 5px;
     color: rgb(90, 91, 93);
     width: 100%;
+    margin-bottom: 30px;
 
 }
 .inbox_block button:hover{
@@ -312,12 +314,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 18px;
     background-color: white;
     justify-content: space-between;
+    
+    
 }
 .labname{
     display: flex;
     background-color: white;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom: 30px;
 }
 .labname button{
     display: flex;
@@ -346,6 +351,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: column;
     padding: 5px;
     color: rgb(90, 91, 93);
+    
 }
 .labels2 button{
     display: flex;
@@ -358,6 +364,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-weight: 300;
     font-size: 18px;
     color: rgb(90, 91, 93);
+    margin-bottom: 30px;
 }
 .labels2 button:hover{
     background-color: rgb(212, 228, 254);
@@ -375,6 +382,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 18px;
     color: rgb(90, 91, 93);
 }
+.scroll{
+    overflow: scroll;
+}
 
 .right {
     display: flex;
@@ -383,6 +393,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 18px;
     height: 100%;
     overflow: hidden;
+    
    
 }
 .end{
@@ -430,7 +441,7 @@ input[type='textarea'] {
 .butact {
     display: flex;
     flex-direction: row;
-    border: 1px solid rgb(90, 91, 93);
+    border: 1px solid rgb(212, 228, 254);
     width: max-content;
     height: max-content;
     border-radius: 10px ;
@@ -457,7 +468,7 @@ input[type='textarea'] {
 
 .que{
     display: flex;
-     
+    padding-left: 15px;
     align-self: center;
     height: max-content;
     width: max-content;
@@ -468,7 +479,7 @@ input[type='textarea'] {
     width: 32px;
 }
 .settings {
-     
+    padding-left: 15px; 
     display: flex;
     align-self: center;
     height: max-content;
@@ -482,7 +493,7 @@ input[type='textarea'] {
 .points {
      
     display: flex;
-     
+    padding-left: 15px;
     align-self: center;
     height: max-content;
     width: max-content;
@@ -509,24 +520,24 @@ input[type='textarea'] {
     flex-direction: row;
     justify-content: flex-start;
     width: 7%;
-    margin-left: 2px;
+    margin-left: 0px;
     padding: 0;
   
 }
 .pustota{
     display: flex;
-    order: 1;
-    width: 33.333333%;
+    order: 3;
+   
+
     
 }
 .all {
    
     display: flex;
     align-self: center;
-    width: 33.333333%;
-    justify-content: center;
+    justify-content: flex-start ;
     padding-left: 5px;
-    order: 2;
+    order: 1;
 
 }
 .all button{
@@ -536,10 +547,7 @@ input[type='textarea'] {
 .update {
     display: flex;
     height: 18px;
-    width: 33.333333%;
-    justify-content: center;
-   
-    order: 3;
+    order: 2;
 }
 .update button{
     background-color: white;
@@ -595,6 +603,7 @@ input[type='textarea'] {
     flex-direction: row;
     width: 100%;
     margin-bottom: 5px;
+    border-radius: 10px;
     
     
 }
@@ -656,4 +665,126 @@ input[type='textarea'] {
     width: 7%;
     padding: 5px;
     
+}
+.mass p{
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: max-content;
+}
+
+
+
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background: #F0F2FE;
+    border: 2px solid #f8ad04;
+    border-radius: 4px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #DBE0FF;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #f8ad04;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #F0F2FE;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 7px;
+    top: 1px;
+    width: 4px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.326rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.204rem;
+    background: #f8ad04;
+    border-radius: 2.988rem;
+    opacity: 0.2;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
 }
