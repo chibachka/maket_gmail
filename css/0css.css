@@ -575,7 +575,7 @@ input[type='textarea'] {
     background-color: rgb(240, 242,254) ;
 }
 .allocated .name{
-    font-weight: bold;
+    
     color: #000;
 }
 .check{
@@ -588,7 +588,7 @@ input[type='textarea'] {
 }
 
 .allocated .date{
-    font-weight: bold;
+    
     color: #000;
 }
 .name {
