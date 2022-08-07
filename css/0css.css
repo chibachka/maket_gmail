@@ -406,7 +406,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     height: 50px;
     padding: 3px;
     width: 50%;
-    margin: 1%;
+    margin: 5px;
 }
 input[type='textarea'] { 
     font-size: 18px;
