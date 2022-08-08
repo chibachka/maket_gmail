@@ -673,7 +673,9 @@ input[type='textarea'] {
     width: max-content;
 }
 
-
+.control-group{
+    padding-left: 30px;
+}
 
 
 .control {
@@ -703,7 +705,7 @@ input[type='textarea'] {
 }
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-    background: #DBE0FF;
+    background: #F0F2FE;
 }
 
 .control input:checked ~ .control_indicator {
@@ -711,7 +713,7 @@ input[type='textarea'] {
 }
 .control:hover input:not([disabled]):checked ~ .control_indicator,
 .control input:checked:focus ~ .control_indicator {
-    background: #F0F2FE;
+    background: #f8ad04;
 }
 .control input:disabled ~ .control_indicator {
     background: #e6e6e6;
