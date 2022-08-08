@@ -427,7 +427,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     height: 50px;
     padding: 5px;
     width: 27%;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 5px 0px;
 }
 input[type='textarea'] { 
     font-size: 18px;
@@ -557,16 +557,21 @@ input[type='textarea'] {
     height: 19px;
     width: 19px;
 }
-.uzhas{
+.num1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 7%;
-     
+}
+.uzhas{
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
 .nav {
-    width: 7%;
+   
     display: flex;
     align-self: center;
     justify-content: center;
@@ -615,6 +620,7 @@ input[type='textarea'] {
 }
 .backli{
     background-color: rgb(240, 242,254);
+    border-radius: 10px;
 }
 .allocated .name{
     
@@ -647,13 +653,16 @@ input[type='textarea'] {
 .mass {
     display: flex;
     order: 2;
-     
+    width: 73%;
+    padding: 5px;
+    overflow: hidden;
+}
+.mascont{
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 66%;
-    padding: 5px;
+    white-space: nowrap;
+    
 }
-
 .date {
     text-align: center;
     margin: center;
@@ -666,12 +675,8 @@ input[type='textarea'] {
     padding: 5px;
     
 }
-.mass p{
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: max-content;
-}
+
+
 
 .control-group{
     padding-left: 30px;
